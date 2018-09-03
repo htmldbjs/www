@@ -5,19 +5,199 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>HTMLDBJS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+	<meta name="keywords" content="HTML Data, Template Engine, Modeling, Code Generation, Semantic Web, Pyronome, Sanpark, Syntax, System Modeling">
+	<meta name="description" content="HTMLDB.js is a simple HTML data & template engine written in pure JavaScript">
+	<meta name="author" content="Sanpark">
+	<meta property="og:title" content="A simple HTML data & template engine written in pure JavaScript!">
+	<meta property="og:site_name" content="A simple HTML data & template engine written in pure JavaScript!" />
+	<meta property="og:url" content="http://www.htmldbjs.org/">
+	<meta property="og:image" content="http://www.htmldbjs.org/assets/img/logo-2x.png">
+	<meta property="og:type" content="website" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="620" />
+	<meta property="og:image:height" content="435" />
+	<meta property="og:description" content="HTMLDB.js is a simple HTML data & template engine written in pure JavaScript.">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+	<link href="assets/css/ionicons.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+	<title>HTMLDB.js</title>
 </head>
 
 <body>
 
-	<div id="linkListContainer">
+	<nav id="navbarFixed" class="white">
+		<div class="nav-wrapper container">
+			<a href="index.html" class="brand-logo light-blue-text hide-on-med-and-down"><img src="assets/img/logo-2x.png" alt="HTMLDB.js"></a>
+			<a href="#" data-activates="ulMobileMenu" class="button-collapse aMobileMenuButton"><i class="ion-navicon-round"></i></a>
+			<ul class="right hide-on-med-and-down">
+				<li class="active"><a class="grey-text" href="index.html">Home</a></li>
+				<li><a class="grey-text" href="about.html">About</a></li>
+				<li><a class="grey-text" href="specification.html">Specification</a></li>
+				<li><a class="grey-text" href="contact.html">Contact</a></li>
+				<li><a class="aGetStarted" href="get-started.html">Get Started!</a></li>
+				<li><a target="_blank" class="grey-text" href="https://github.com/htmldbjs"><i class="ion-social-github"></i></a></li>
+			</ul>
+			<ul class="side-nav hide-on-large-only" id="ulMobileMenu">
+				<li class="white center-align"><img style="margin-top: 20px;" src="assets/img/logo-2x.png" width="180" alt="Modo"></li>
+				<li class="active"><a class="grey-text active" href="index.html">Home</a></li>
+				<li><a class="grey-text" href="about.html">About</a></li>
+				<li><a class="grey-text" href="specification.html">Specification</a></li>
+				<li><a class="grey-text" href="contact.html">Contact</a></li>
+				<li><a id="btnQuickstart" class="aGetStarted" href="get-started.html">Get Started!</a></li>
+				<li><a target="_blank" class="grey-text" href="https://github.com/htmldbjs"><i class="ion-social-github" style="margin-right: 0px;"></i>&nbsp;GitHub</a></li>
+			</ul>
+		</div>
+	</nav>
 
-	</div>
-	<div id="linkSectionsContainer">
+	<!-- Index Banner Start -->
+	<section id="sectionIndexBanner" class="displayFlex landing">
+		<div class="container displayFlex center black-text">
+			<div class="row" id="rowLogo">
+				<h1 class="hide-on-small-only"><img src="assets/img/logo-2x.png" alt="HTMLDB.js"></h1>
+				<h2 class="hide-on-small-only">A simple HTML data & template engine written in pure JavaScript</h2>
+				<h1 class="hide-on-med-and-up"><img src="assets/img/logo.png" width="280" alt="HTMLDB.js" style="object-fit: contain;"></h1>
+				<h3 class="hide-on-med-and-up">A simple HTML data & template engine written in pure JavaScript</h3>
+			</div>
+			<div class="row center" id="rowBannerButtons">
+				<div class="col s12 l4 m4">
+					<a href="get-started.html" id="btnGoStart" class="aBannerButtons btn btn-large">Get Started!</a>
+				</div>
+				<div class="col s12 l4 m4">
+					<a href="specification.html" id="btnGoSpecification" class="aBannerButtons btn buttonGoSpecification btn-large">Specification</a>
+				</div>
+				<div class="col s12 l4 m4">
+					<a target="_blank" href="https://github.com/htmldbjs" class="aBannerButtons btn buttonGoSpecification btn-large"><i
+						 class="ion-social-github"></i> <span>GitHub</span></a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- #Index Banner End -->
+	<!-- Section Welcome Start -->
+	<section id="sectionWelcome" class="displayFlex alignedCenter black-text">
+		<div class="container displayFlex alignedCenter">
+			<div id="divWelcomeText">
+				<h1 class="light">Welcome!</h1>
+				<p class="light">HTMLDB.js is written in pure JavaScript so that it can be used with different backend and frontend frameworks.</p>
+			</div>
+			<!-- Code preview card -->
+			<div id="divWelcomePreview">
+				<div id="js" style="opacity: 0 !important;">
+					<img src="assets/img/js.png" alt="JS">
+				</div>
+				
+			</div>
+			<!-- #Code preview card END-->
+		</div>
+	</section>
+	<!-- #Section Welcome END -->
+	<!-- Promotion Table Start -->
+	<section id="sectionPromotionTable" class="displayFlex alignedCenter">
+		<div class="container center white-text">
+			<div class="row">
+				<h3 class="light">About HTMLDB.js</h3>
+			</div>
+			<div class="row">
+				<p class="light">The simple syntax of Modo allows easy modeling for not only the IT professionals but also the professionals
+					from non-IT fields. The well-structured nature of Modo also allows direct conversion of the models to different programming
+					languages and technologies, thus serving as a technology independent modeling method.</p>
+				<a href="about.html" class="btn logoColor">Learn More...</a>
+			</div>
+		</div>
+	</section>
+	<!-- #Promotion Table End -->
+	<!-- Download Section Starts -->
+	<section id="download" class="displayFlex">
+		<div class="container center">
+			<div class="row">
+				<h3 class="light">Download</h3>
+			</div>
+			<div class="row displayFlex">
+				<table class="responsive-table highlight">
+					<thead>
+						<tr>
+							<th>File Description</th>
+							<th class="center-align">File Type</th>
+							<th class="center-align">File Size</th>
+							<th class="center-align">Last Update</th>
+							<th class="center-align"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Modo Language Specification (English)</td>
+							<td class="center-align">PDF</td>
+							<td class="center-align">785 KB.</td>
+							<td class="center-align">Nov. 11, 2009</td>
+							<td class="center-align"><a target="_blank" href="download/Modo.Language.Specification.en.2009.11.10.pdf">Download</a></td>
+						</tr>
+						<tr>
+							<td>Modo Identity Guidelines</td>
+							<td class="center-align">PDF</td>
+							<td class="center-align">528 KB.</td>
+							<td class="center-align">Nov. 11, 2009</td>
+							<td class="center-align"><a target="_blank" href="download/Modo.Identity.Guidelines.en.2009.11.10.pdf">Download</a></td>
+						</tr>
+						<tr>
+							<td>Modo Logo (Vector Format)</td>
+							<td class="center-align">SVG</td>
+							<td class="center-align">118 KB.</td>
+							<td class="center-align">Nov. 11, 2009</td>
+							<td class="center-align"><a target="_blank" href="download/Modo.Logo.svg">Download</a></td>
+						</tr>
+						<tr>
+							<td>Modo Logo (Vector Format)</td>
+							<td class="center-align">EPS</td>
+							<td class="center-align">427 KB.</td>
+							<td class="center-align">Nov. 11, 2009</td>
+							<td class="center-align"><a target="_blank" href="download/Modo.Logo.eps">Download</a></td>
+						</tr>
 
-	</div>
-	
-	<script src="app.js"></script>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section id="sectionReadytoGo" class="displayFlex">
+		<div class="container displayFlex alignedCenter">
+			<h1 class="light center-align">Ready for some <img src="assets/img/logo-2x.png" alt="modo programming language" id="imgInlineTextLogo">				?</h1>
+			<a href="get-started.html" class="btn logoColor waves-effect waves-light">Get Started!</a>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text" style="opacity: 0.8;"><img src="assets/img/logo-white.png" width="160" alt="HTMLDB.js"></h5>
+					<p class="grey-text text-lighten-4">A simple HTML data & template engine written in pure JavaScript</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="grey-text text-lighten-3 light" href="index.html">Home</a></li>
+						<li><a class="grey-text text-lighten-3 light" href="about.html">About</a></li>
+						<li><a class="grey-text text-lighten-3 light" href="specification.html">Specification</a></li>
+						<li><a class="grey-text text-lighten-3 light" href="contact.html">Contact</a></li>
+						<li><a class="grey-text text-lighten-3 bold" href="get-started.html">Get Started!</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/"
+				 target="_blank">Creative Commons Attribution 4.0</a> International license.
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/docs.js"></script> -->
+	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>

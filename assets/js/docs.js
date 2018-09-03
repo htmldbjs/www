@@ -1,11 +1,11 @@
-var repoURL = "https://api.github.com/repos/htmldbjs/htmldbjs/contents/docs?ref=dev";
-var directoryList = []
+let repoURL = "https://api.github.com/repos/htmldbjs/htmldbjs/contents/docs?ref=dev";
+let directoryList = []
 
 function fetchDocs(url) {
 	return new Promise(function (resolve, reject) {
 
 		fetch(url).then(function (res) { return res.json() })
-			.then(function (json) {
+			.then((json) => {
 				directoryList = []
 				json.map(async function (response) {
 					directoryList.push({
@@ -34,17 +34,17 @@ function b64DecodeUnicode(str) {
 
 async function renderLinks(links) {
 
-	var linkList = document.getElementById('linkListContainer');
-	var sectionContainer = document.getElementById('linkSectionsContainer');
+	let linkList = document.getElementById('linkListContainer');
+	let sectionContainer = document.getElementById('linkSectionsContainer');
 
 	if (links.constructor === Array) {
 
 		for (const link of links) {
-			var parentElement = document.querySelector(`[data-path="${link.parentURL}"]`);
+			let parentElement = document.querySelector('[data-path="' + link.parentURL + '"]');
 
 			if (parentElement) {
-				var subList = document.createElement('ul');
-				var subListItem = document.createElement('li');
+				let subList = document.createElement('ul');
+				let subListItem = document.createElement('li');
 
 				if (link.type === "dir") {
 					subListItem.innerHTML = link.name;
@@ -61,7 +61,7 @@ async function renderLinks(links) {
 				}
 
 				if (link.type === "file") {
-					subListItem.innerHTML = `<a href="${link.path}"> ${link.name} </a>`;
+					subListItem.innerHTML = '<a href="' + link.path + '"> ' + link.name + ' </a>';
 					subList.appendChild(subListItem);
 
 					(parentElement.children[0])
@@ -72,8 +72,8 @@ async function renderLinks(links) {
 
 			} else {
 
-				var subList = document.createElement('ul');
-				var subListItem = document.createElement('li');
+				let subList = document.createElement('ul');
+				let subListItem = document.createElement('li');
 
 				subListItem.innerHTML = link.name
 				subListItem.setAttribute('data-path', link.path)
