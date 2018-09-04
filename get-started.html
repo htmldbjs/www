@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+    <meta name="keywords" content="HTML Data, Template Engine, Modeling, Code Generation, Semantic Web, Pyronome, Sanpark, Syntax, System Modeling">
+    <meta name="description" content="HTMLDB.js is a simple HTML data & template engine written in pure JavaScript">
+    <meta name="author" content="Sanpark">
+    <meta property="og:title" content="A simple HTML data & template engine written in pure JavaScript!">
+    <meta property="og:site_name" content="A simple HTML data & template engine written in pure JavaScript!" />
+    <meta property="og:url" content="http://www.htmldbjs.org/">
+    <meta property="og:image" content="http://www.htmldbjs.org/assets/img/logo-2x.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="620" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:description" content="HTMLDB.js is a simple HTML data & template engine written in pure JavaScript.">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css">
+    <title>HTMLDB.js</title>
+</head>
+
+<body>
+    <ul class="side-nav fixed" id="ulMobileMenu">
+        <li class="white center-align"><img style="margin-top: 20px;" src="assets/img/logo-2x.png" width="180" alt="Modo"></li>
+        <li class=""><a class="grey-text" href="index.html">Home</a></li>
+        <li><a class="grey-text" href="about.html">About</a></li>
+        <li><a class="grey-text" href="specification.html">Specification</a></li>
+        <li><a class="grey-text" href="contact.html">Contact</a></li>
+        <li class="active"><a id="btnQuickstart" class="aGetStarted" href="get-started.html">Get Started!</a></li>
+        <li><a target="_blank" class="grey-text" href="https://github.com/htmldbjs"><i class="ion-social-github" style="margin-right: 0px;"></i>&nbsp;GitHub</a></li>
+    </ul>
+    <nav id="navbarFixed" class="white hide-on-large-only">
+        <div class="nav-wrapper container">
+            <a href="#" data-activates="ulMobileMenu" class="button-collapse aMobileMenuButton"><i class="ion-navicon-round"></i></a>
+        </div>
+    </nav>
+    <main id="mainDocumentation" class="row noMargin">
+        <!-- Content Start -->
+        <div class="wrapper col s12">
+            <section id="sectionGetStarted" data-linker="aGetStarted">
+                <div class="container scrollspy" id="divUnderstandTheSystem">
+                    <h1>Get Started</h1>
+                    <h2>Installation</h2>
+
+                    <p>
+                        Installation HTMLDB is very simple. Just add src/htmldb.js or dist/htmldb.min.js in your HTML document. 
+                        You don't need to initialize it with javascript. On the page load, HTMLDB automatically initializes itself.</p>
+
+<!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;html</span> <span style="color: #4070a0">lang=&quot;en&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;head&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;meta</span> <span style="color: #4070a0">charset=&quot;utf-8&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;title&gt;</span>My HTMLDB Page<span style="color: #062873; font-weight: bold">&lt;/title&gt;</span>
+        <span style="color: #60a0b0; font-style: italic">&lt;!--</span>
+        <span style="color: #60a0b0; font-style: italic">htmldb.min.js file location can change based on your directory structure.</span><span style="color: #60a0b0; font-style: italic">
+        --&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;script </span><span style="color: #4070a0">type=&quot;text/javascript&quot;</span> <span style="color: #4070a0">src=&quot;htmldb.min.js&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/head&gt;</span>
+
+    <span style="color: #062873; font-weight: bold">&lt;body&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/body&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;/html&gt;</span></pre></div>  
+                </div>
+                <div class="container scrollspy" id="divDefineMainElements">
+                    <h2>Usage</h2>
+                    <p>Firstly, create an HTMLDB table. HTMLDB tables are like database tables, 
+                        they have columns and rows. In this case we have a table to list our friends.</p>
+                    <!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;html</span> <span style="color: #4070a0">lang=&quot;en&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;head&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;meta</span> <span style="color: #4070a0">charset=&quot;utf-8&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;title&gt;</span>My HTMLDB Page<span style="color: #062873; font-weight: bold">&lt;/title&gt;</span>
+
+        <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;friendsHTMLDB&quot;</span> <span style="color: #4070a0">class=&quot;htmldb-table&quot;</span> <span style="color: #4070a0">data-htmldb-read-url=&quot;friends/read&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/div&gt;</span>
+
+        <span style="color: #062873; font-weight: bold">&lt;script </span><span style="color: #4070a0">type=&quot;text/javascript&quot;</span> <span style="color: #4070a0">src=&quot;htmldb.min.js&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/head&gt;</span>
+
+    <span style="color: #062873; font-weight: bold">&lt;body&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/body&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;/html&gt;</span>
+</pre></div>
+
+                    <p>In the above example, we use a container <code>&lt;div&gt;</code> element for storing server side data (e.g. friends) in HTML format. 
+                        This <code>&lt;div&gt;</code> must have a unique id attribute. By using a special class name htmldb-table,
+                        we specify this <code>&lt;div&gt;</code> as an HTMLDB table. Additionally, we use special attributes starting 
+                        with data-htmldb- to define properties of HTMLDB elements. In this case we use data-htmldb-read-url for specifying
+                        the source URL of HTMLDB table that friends data will be loaded.</p>
+                    <p>&nbsp;</p>
+                    <p>Let's assume friends data (URL decoded) loaded from the server are as follows:</p>
+                    <!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">{
+    <span style="color: #062873; font-weight: bold">&quot;c&quot;</span>: [
+    <span style="color: #4070a0">&quot;id&quot;</span>, <span style="color: #4070a0">&quot;firstname&quot;</span>, <span style="color: #4070a0">&quot;lastname&quot;</span>
+    ],
+    <span style="color: #062873; font-weight: bold">&quot;r&quot;</span>: [
+        [<span style="color: #4070a0">&quot;1&quot;</span>, <span style="color: #4070a0">&quot;Rachel&quot;</span>, <span style="color: #4070a0">&quot;Green&quot;</span>],
+        [<span style="color: #4070a0">&quot;2&quot;</span>, <span style="color: #4070a0">&quot;Phoebe&quot;</span>, <span style="color: #4070a0">&quot;Buffay&quot;</span>],
+        [<span style="color: #4070a0">&quot;3&quot;</span>, <span style="color: #4070a0">&quot;Monica&quot;</span>, <span style="color: #4070a0">&quot;Geller&quot;</span>],
+        [<span style="color: #4070a0">&quot;4&quot;</span>, <span style="color: #4070a0">&quot;Chandler&quot;</span>, <span style="color: #4070a0">&quot;Bing&quot;</span>],
+        [<span style="color: #4070a0">&quot;5&quot;</span>, <span style="color: #4070a0">&quot;Joey&quot;</span>, <span style="color: #4070a0">&quot;Tribbiani&quot;</span>],
+        [<span style="color: #4070a0">&quot;6&quot;</span>, <span style="color: #4070a0">&quot;Ross&quot;</span>, <span style="color: #4070a0">&quot;Geller&quot;</span>]
+    ]
+}
+</pre></div>
+
+                    <p>Let's list our friends with a template.</p>
+<!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;html</span> <span style="color: #4070a0">lang=&quot;en&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;head&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;meta</span> <span style="color: #4070a0">charset=&quot;utf-8&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;title&gt;</span>My HTMLDB Page<span style="color: #062873; font-weight: bold">&lt;/title&gt;</span>
+    
+        <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;friendsHTMLDB&quot;</span> <span style="color: #4070a0">class=&quot;htmldb-table&quot;</span> <span style="color: #4070a0">data-htmldb-read-url=&quot;friends/read&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/div&gt;</span>
+    
+        <span style="color: #062873; font-weight: bold">&lt;table&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;thead&gt;</span>
+                <span style="color: #062873; font-weight: bold">&lt;tr&gt;</span>
+                    <span style="color: #062873; font-weight: bold">&lt;th&gt;</span>ID<span style="color: #062873; font-weight: bold">&lt;/th&gt;</span>
+                    <span style="color: #062873; font-weight: bold">&lt;th&gt;</span>First Name<span style="color: #062873; font-weight: bold">&lt;/th&gt;</span>
+                    <span style="color: #062873; font-weight: bold">&lt;th&gt;</span>Last Name<span style="color: #062873; font-weight: bold">&lt;/th&gt;</span>
+                <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;/thead&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;tbody</span> <span style="color: #4070a0">id=&quot;friendsList&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/tbody&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/table&gt;</span>
+    
+        <span style="color: #062873; font-weight: bold">&lt;script </span><span style="color: #4070a0">type=&quot;text/html&quot;</span> <span style="color: #4070a0">id=&quot;friendsListTemplate&quot;</span> <span style="color: #4070a0">class=&quot;htmldb-template&quot;</span>
+                <span style="color: #4070a0">data-htmldb-table=&quot;friendsHTMLDB&quot;</span> <span style="color: #4070a0">data-htmldb-template-target=&quot;friendsList&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+            <span style="color: #666666">&lt;</span>tr data<span style="color: #666666">-</span>row<span style="color: #666666">-</span>id<span style="color: #666666">=</span><span style="color: #4070a0">&quot;{{id}}&quot;</span><span style="color: #666666">&gt;</span>
+                <span style="color: #666666">&lt;</span>td<span style="color: #666666">&gt;</span>{{id}}<span style="color: #666666">&lt;</span><span >/td&gt;</span>
+                <span style="color: #666666">&lt;</span>td<span style="color: #666666">&gt;</span>{{firstname}}<span style="color: #666666">&lt;</span><span >/td&gt;</span>
+                <span style="color: #666666">&lt;</span>td<span style="color: #666666">&gt;</span>{{lastname}}<span style="color: #666666">&lt;</span><span >/td&gt;</span>
+            <span style="color: #666666">&lt;</span><span >/tr&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+    
+        <span style="color: #062873; font-weight: bold">&lt;script </span><span style="color: #4070a0">type=&quot;text/javascript&quot;</span> <span style="color: #4070a0">src=&quot;htmldb.min.js&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/head&gt;</span>
+
+    <span style="color: #062873; font-weight: bold">&lt;body&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/body&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;/html&gt;</span>
+  </pre></div>
+
+                <p>In the example above, there is a <code>&lt;table&gt;</code> with an empty <code>&lt;tbody&gt;</code> element. 
+                    This empty <code>&lt;tbody&gt;</code> element will contain list of friends after the page load with the specified template. 
+                    <code>&lt;tbody&gt;</code> element has an id attribute with the value <code>"friendsList"</code>.</p>
+                
+                <p>Additionally, there is a <code>&lt;script&gt;</code> element with <code>type="text/html"</code> attribute. 
+                    This <code>&lt;script&gt;</code> element contains list template with mustache text fields.</p>
+                
+                <p>After loading page, this HTML will look like as the following:</p>
+                <!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;html</span> <span style="color: #4070a0">lang=&quot;en&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;head&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;meta</span> <span style="color: #4070a0">charset=&quot;utf-8&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;title&gt;</span>My HTMLDB Page<span style="color: #062873; font-weight: bold">&lt;/title&gt;</span>
+
+  <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;friendsHTMLDB&quot;</span> <span style="color: #4070a0">class=&quot;htmldb-table&quot;</span> <span style="color: #4070a0">data-htmldb-read-url=&quot;friends/read&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+    <span style="color: #60a0b0; font-style: italic">&lt;!-- HTMLDB table runtime content --&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+
+  <span style="color: #062873; font-weight: bold">&lt;table&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;thead&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;th&gt;</span>ID<span style="color: #062873; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;th&gt;</span>First Name<span style="color: #062873; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;th&gt;</span>Last Name<span style="color: #062873; font-weight: bold">&lt;/th&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/thead&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;tbody</span> <span style="color: #4070a0">id=&quot;friendsList&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;tr</span> <span style="color: #4070a0">data-row-id=&quot;1&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>1<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Rachel<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Green<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;tr</span> <span style="color: #4070a0">data-row-id=&quot;2&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>2<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Phoebe<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Buffay<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;tr</span> <span style="color: #4070a0">data-row-id=&quot;3&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>3<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Monica<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Geller<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;tr</span> <span style="color: #4070a0">data-row-id=&quot;4&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>4<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Chandler<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Bing<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;tr</span> <span style="color: #4070a0">data-row-id=&quot;5&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>5<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Joey<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Tribbiani<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;tr</span> <span style="color: #4070a0">data-row-id=&quot;6&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>6<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Ross<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>Geller<span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/tbody&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;/table&gt;</span>
+
+  <span style="color: #062873; font-weight: bold">&lt;script </span><span style="color: #4070a0">type=&quot;text/html&quot;</span> <span style="color: #4070a0">id=&quot;friendsListTemplate&quot;</span> <span style="color: #4070a0">class=&quot;htmldb-template&quot;</span> <span style="color: #4070a0">data-htmldb-table=&quot;friendsHTMLDB&quot;</span> <span style="color: #4070a0">data-htmldb-template-target=&quot;friendsList&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #666666">&lt;</span>tr data<span style="color: #666666">-</span>row<span style="color: #666666">-</span>id<span style="color: #666666">=</span><span style="color: #4070a0">&quot;{{id}}&quot;</span><span style="color: #666666">&gt;</span>
+            <span style="color: #666666">&lt;</span>td<span style="color: #666666">&gt;</span>{{id}}<span style="color: #666666">&lt;</span><span >/td&gt;</span>
+            <span style="color: #666666">&lt;</span>td<span style="color: #666666">&gt;</span>{{firstname}}<span style="color: #666666">&lt;</span><span >/td&gt;</span>
+            <span style="color: #666666">&lt;</span>td<span style="color: #666666">&gt;</span>{{lastname}}<span style="color: #666666">&lt;</span><span >/td&gt;</span>
+        <span style="color: #666666">&lt;</span><span >/tr&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+
+  <span style="color: #062873; font-weight: bold">&lt;script </span><span style="color: #4070a0">type=&quot;text/javascript&quot;</span> <span style="color: #4070a0">src=&quot;htmldb.min.js&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/script&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;/head&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;body&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;/body&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;/html&gt;</span>
+</pre></div>
+
+  
+                </div>
+                <div class="container scrollspy" id="divDefineMemberElements">
+                    <h2>Backend Integration</h2>
+                    <p>It is easy to integrate HTMLDB with your favorite backend framework.
+                        HTMLDB requests data in JSON format and uses an inner form to post data to the server.</p>
+                    
+                    <h3>Request Format</h3>
+                    <p>A typical HTMLDB request is a JSON string with the following format:</p>
+                    <!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">{
+    <span style="color: #062873; font-weight: bold">&quot;c&quot;</span>: [
+        <span style="color: #4070a0">&quot;id&quot;</span>, <span style="color: #4070a0">&quot;column0&quot;</span>, <span style="color: #4070a0">&quot;column1&quot;</span>, <span style="color: #4070a0">&quot;column2&quot;</span>, <span style="color: #4070a0">&quot;columnName&quot;</span>
+    ],
+    <span style="color: #062873; font-weight: bold">&quot;r&quot;</span>: [
+        [<span style="color: #4070a0">&quot;1&quot;</span>, <span style="color: #4070a0">&quot;This is column0 value&quot;</span>, <span style="color: #4070a0">&quot;Column 1 Value&quot;</span>, <span style="color: #4070a0">&quot;Column 2 Value&quot;</span>, <span style="color: #4070a0">&quot;Last column value&quot;</span>],
+        [<span style="color: #4070a0">&quot;2&quot;</span>, <span style="color: #4070a0">&quot;This is column0 value&quot;</span>, <span style="color: #4070a0">&quot;Column 1 Value&quot;</span>, <span style="color: #4070a0">&quot;Column 2 Value&quot;</span>, <span style="color: #4070a0">&quot;Last column value&quot;</span>],
+        [<span style="color: #4070a0">&quot;3&quot;</span>, <span style="color: #4070a0">&quot;This is column0 value&quot;</span>, <span style="color: #4070a0">&quot;Column 1 Value&quot;</span>, <span style="color: #4070a0">&quot;Column 2 Value&quot;</span>, <span style="color: #4070a0">&quot;Last column value&quot;</span>]
+    ]
+}
+</pre></div>
+
+
+                    <p>Please note that data loaded from the server must be URL encoded. Raw data from the server will be as follows:</p>
+                    <div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+%7B%22c%22%3A%5B%22id%22%2C%22column0%22%2C%22column1%22%2C%22column2%22%2C%22columnName%22%5D%2C%22r%22%3A%5B%5B%221%22%2C%22This%20is%20column0%20value%22%2C%22Column%201%20Value%22%2C%22Column%202%20Value%22%2C%22Last%20column%20value%22%5D%2C%5B%222%22%2C%22This%20is%20column0%20value%22%2C%22Column%201%20Value%22%2C%22Column%202%20Value%22%2C%22Last%20column%20value%22%5D%2C%5B%223%22%2C%22This%20is%20column0%20value%22%2C%22Column%201%20Value%22%2C%22Column%202%20Value%22%2C%22Last%20column%20value%22%5D%5D%7D
+</pre></div>
+                    <p>HTMLDB uses <code>decodeURIComponent</code> function to decode URL encoded data.</p>
+                    <h3>Response Format</h3>
+                    <p>HTMLDB uses an inner HTML form element to post data to the server with the following format:</p>
+                    <!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span>htmldb_action</span><span>0</span><span>:</span> <span>inserted</span>
+<span>htmldb_row</span><span>0</span><span>_id:</span> <span>1</span>
+<span>htmldb_row</span><span>0</span><span>_column</span><span>0</span><span>:</span> <span>column</span><span>0</span> <span>new</span> <span>value</span>  
+<span>htmldb_row</span><span>0</span><span>_column</span><span>1</span><span>:</span> <span>column</span><span>1</span> <span>new</span> <span>value</span>
+<span>htmldb_row</span><span>0</span><span>_column</span><span>2</span><span>:</span> <span>column</span><span>2</span> <span>new</span> <span>value</span>
+<span>htmldb_row</span><span>0</span><span>_columnName:</span> <span>columnName</span> <span>new</span> <span>value</span>
+</pre></div>
+
+                    <p>The above example shows single-row post parameters. For posting multiple rows the following format is used:</p>
+                    <!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span >htmldb_action</span><span >0</span><span >:</span> <span >inserted</span>
+<span >htmldb_row</span><span >0</span><span >_id:</span> <span >1</span>
+<span >htmldb_row</span><span >0</span><span >_column</span><span >0</span><span >:</span> <span >column</span><span >0</span> <span >new</span> <span >value</span>  
+<span >htmldb_row</span><span >0</span><span >_column</span><span >1</span><span >:</span> <span >column</span><span >1</span> <span >new</span> <span >value</span>
+<span >htmldb_row</span><span >0</span><span >_column</span><span >2</span><span >:</span> <span >column</span><span >2</span> <span >new</span> <span >value</span>
+<span >htmldb_row</span><span >0</span><span >_columnName:</span> <span >columnName</span> <span >new</span> <span >value</span>
+<span >htmldb_action</span><span >1</span><span >:</span> <span >inserted</span>
+<span >htmldb_row</span><span >1</span><span >_id:</span> <span >2</span>
+<span >htmldb_row</span><span >1</span><span >_column</span><span >0</span><span >:</span> <span >column</span><span >0</span> <span >new</span> <span >value</span>  
+<span >htmldb_row</span><span >1</span><span >_column</span><span >1</span><span >:</span> <span >column</span><span >1</span> <span >new</span> <span >value</span>
+<span >htmldb_row</span><span >1</span><span >_column</span><span >2</span><span >:</span> <span >column</span><span >2</span> <span >new</span> <span >value</span>
+<span >htmldb_row</span><span >1</span><span >_columnName:</span> <span >columnName</span> <span >new</span> <span >value</span>
+<span >htmldb_action</span><span >2</span><span >:</span> <span >inserted</span>
+<span >htmldb_row</span><span >2</span><span >_id:</span> <span >3</span>
+<span >htmldb_row</span><span >2</span><span >_column</span><span >0</span><span >:</span> <span >column</span><span >0</span> <span >new</span> <span >value</span>  
+<span >htmldb_row</span><span >2</span><span >_column</span><span >1</span><span >:</span> <span >column</span><span >1</span> <span >new</span> <span >value</span>
+<span >htmldb_row</span><span >2</span><span >_column</span><span >2</span><span >:</span> <span >column</span><span >2</span> <span >new</span> <span >value</span>
+<span >htmldb_row</span><span >2</span><span >_columnName:</span> <span >columnName</span> <span >new</span> <span >value</span>
+</pre></div>
+
+                </div>
+
+                <div class="container scrollspy" id="divElementTypeElementValue">
+                    <h2>Element Type vs. Element Value</h2>
+                    <p>When there is a need to access the value of a certain member element, a dollar symbol ($) is placed
+                        preceding the element name.</p>
+                    <div class="divModoCodePreview">
+                        <code>
+<pre>
+<span class="grey-text">/* Student Element Declaration */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    Fullname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    <span style="color:#069;font-weight:700;">$</span>Fullname <span style="color:#069;font-weight:700;">=</span> <span style="color:#069;font-weight:700;">$</span><span style="color: #3399CC;">Name</span> <span style="color:#069;font-weight:700;">+</span> <span style="color: #3399CC;">' '</span> <span style="color:#069;font-weight:700;">+</span> <span style="color:#069;font-weight:700;">$</span><span style="color: #3399CC;">Surname</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
+</pre>
+</code>
+                    </div>
+
+                    <p>In the above example the type of the <span class="spanInlineIdentifier">Fullname</span> member element
+                        is <span class="spanInlineIdentifier">String</span>. However the value of the element is a string
+                        combination of the values of the member elements <span class="spanInlineIdentifier">Name</span> and
+                        <span class="spanInlineIdentifier">Surname</span>. This shows that at any time, the value of the
+                        fullname property of a student is his/her name, surname and a single space in between them.</p>
+
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="container scrollspy" id="divExtendElements">
+                    <h2>Extend Your Elements</h2>
+                    <p>Different elements can be derived from built-in elements or previously defined elements.</p>
+                    <div class="divModoCodePreview">
+                        <code>
+<pre>
+<span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Advisor</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
+
+Instructor <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
+
+Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Instructor</span> <span style="color:#069;font-weight:700;">{</span>
+    OfficeDay <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Weekday</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
+</pre>
+</code>
+                    </div>
+                    <p>In the above example a new element <span class="spanInlineIdentifier">Advisor</span> is defined. The
+                        advisor is in fact an <span class="spanInlineIdentifier">Instructor</span> but an additional property
+                        of office day is added.</p>
+
+                    <p>The member elements can also be extended like the elements.</p>
+                    <div class="divModoCodePreview">
+                        <code>
+<pre>
+<span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Instructor</span> <span style="color:#069;font-weight:700;">{</span>
+        OfficeDay <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Weekday</span><span style="color:#069;font-weight:700;">;</span>
+    <span style="color:#069;font-weight:700;">}</span>
+<span style="color:#069;font-weight:700;">}</span>
+
+Instructor <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
+</pre>
+</code>
+                    </div>
+                    <p>In the above example the member element <span class="spanInlineIdentifier">Advisor</span> of the element
+                        <span class="spanInlineIdentifier">Student</span> extends the element <span class="spanInlineIdentifier">Instructor</span>
+                        adding the property of office day.</p>
+
+                    <p>&nbsp;</p>
+                </div>
+                <div class="container scrollspy" id="divDifferentStates">
+                    <h2>Different States of the System</h2>
+                    <p>Modo can also represent different states of the system. The at symbol (@) is used to define those
+                        rules.</p>
+                    <div class="divModoCodePreview">
+                        <code>
+<pre>
+<span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Boolean</span><span style="color:#069;font-weight:700;">;</span>
+    <span style="color:#069;font-weight:700;">$</span>CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">true</span> <span style="color:#069;font-weight:700;">@</span> <span style="color:#069;font-weight:700;">($</span>GPA <span style="color:#069;font-weight:700;">&gt;=</span> <span style="color: #3399CC;">2</span><span style="color:#069;font-weight:700;">);</span>
+    <span style="color:#069;font-weight:700;">$</span>CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">false</span> <span style="color:#069;font-weight:700;">@</span> <span style="color:#069;font-weight:700;">($</span>GPA <span style="color:#069;font-weight:700;">&lt;</span> <span style="color: #3399CC;">2</span><span style="color:#069;font-weight:700;">);</span>
+<span style="color:#069;font-weight:700;">}</span>
+</pre>
+</code>
+                    </div>
+                    <p>The above example adds a new member element <span class="spanInlineIdentifier">CanGraduate</span>
+                        to the <span class="spanInlineIdentifier">Student</span> element. The value of this member element
+                        changes for different values of the GPA member element.</p>
+
+                    <p>For more detailed information, please <a href="index.html#download">download</a> Modo Language Specification
+                        Document.
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&nbsp;</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/documentation.js"></script>
+</body>
+
+</html>
