@@ -275,7 +275,7 @@
 	padding-bottom: 5px;
 	margin-top: 40px;
 	margin-bottom: 20px;
-	color:rgb(37, 41, 107);
+	color: #404491;
   }
   #mainDocumentation h3 {
 	font-weight: normal;
@@ -290,7 +290,7 @@
 	font-size: 18px;
 	font-weight: 300;
 	color: #646C7F;
-	line-height: normal;
+	line-height: 1.5em;
 	padding-top: 10px;
 	padding-bottom: 10px;
   }
@@ -510,4 +510,9 @@
 	}
 	.codeHighlighter * {
 		border: none !important;
+	}
+	code {
+		border-radius: 3px;
+		padding: 1px;
+		background: rgba(27,31,35,0.05);
 	}

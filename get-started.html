@@ -67,6 +67,7 @@
     <span style="color: #062873; font-weight: bold">&lt;body&gt;</span>
     <span style="color: #062873; font-weight: bold">&lt;/body&gt;</span>
 <span style="color: #062873; font-weight: bold">&lt;/html&gt;</span></pre></div>  
+                <p>&nbsp;</p>
                 </div>
                 <div class="container scrollspy" id="divDefineMainElements">
                     <h2>Usage</h2>
@@ -93,7 +94,7 @@
                         we specify this <code>&lt;div&gt;</code> as an HTMLDB table. Additionally, we use special attributes starting 
                         with data-htmldb- to define properties of HTMLDB elements. In this case we use data-htmldb-read-url for specifying
                         the source URL of HTMLDB table that friends data will be loaded.</p>
-                    <p>&nbsp;</p>
+
                     <p>Let's assume friends data (URL decoded) loaded from the server are as follows:</p>
                     <!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">{
     <span style="color: #062873; font-weight: bold">&quot;c&quot;</span>: [
@@ -225,7 +226,7 @@
 <span style="color: #062873; font-weight: bold">&lt;/html&gt;</span>
 </pre></div>
 
-  
+                <p>&nbsp;</p>
                 </div>
                 <div class="container scrollspy" id="divDefineMemberElements">
                     <h2>Backend Integration</h2>
@@ -283,129 +284,223 @@
 <span >htmldb_row</span><span >2</span><span >_columnName:</span> <span >columnName</span> <span >new</span> <span >value</span>
 </pre></div>
 
+                <p>&nbsp;</p>
                 </div>
 
                 <div class="container scrollspy" id="divElementTypeElementValue">
-                    <h2>Element Type vs. Element Value</h2>
-                    <p>When there is a need to access the value of a certain member element, a dollar symbol ($) is placed
-                        preceding the element name.</p>
-                    <div class="divModoCodePreview">
-                        <code>
-<pre>
-<span class="grey-text">/* Student Element Declaration */</span>
-Student <span style="color:#069;font-weight:700;">{</span>
-    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    Fullname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    <span style="color:#069;font-weight:700;">$</span>Fullname <span style="color:#069;font-weight:700;">=</span> <span style="color:#069;font-weight:700;">$</span><span style="color: #3399CC;">Name</span> <span style="color:#069;font-weight:700;">+</span> <span style="color: #3399CC;">' '</span> <span style="color:#069;font-weight:700;">+</span> <span style="color:#069;font-weight:700;">$</span><span style="color: #3399CC;">Surname</span><span style="color:#069;font-weight:700;">;</span>
-<span style="color:#069;font-weight:700;">}</span>
-</pre>
-</code>
-                    </div>
-
-                    <p>In the above example the type of the <span class="spanInlineIdentifier">Fullname</span> member element
-                        is <span class="spanInlineIdentifier">String</span>. However the value of the element is a string
-                        combination of the values of the member elements <span class="spanInlineIdentifier">Name</span> and
-                        <span class="spanInlineIdentifier">Surname</span>. This shows that at any time, the value of the
-                        fullname property of a student is his/her name, surname and a single space in between them.</p>
-
+                    <h2>Elements</h2>
+                    <table summary="Elements" class="tableOperator striped" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>&nbsp</th>
+                                <th scope="col" width="150px">Element Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-button-add</a></td>
+                                <td>An action button is used for adding a new record to the specified table. When <code>htmldb-button-add</code>
+                                    button is clicked related forms are reset.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-button-edit</a></td>
+                                <td>An action button is used for editing a specific record. When <code>htmldb-button-edit</code> button is clicked 
+                                    <code>htmldb-table</code> element's active id is set to the specified record.
+                                    Additionally, all related form fields are populated with the values of the record.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-button-refresh</a></td>
+                                <td>An action button is used for refreshing all <code>htmldb-table</code> elements.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-button-save</a></td>
+                                <td>An action button is used for saving current values of the specified form.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-button-sort</a></td>
+                                <td>An action button is used for updating the sorting preferences.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-checkbox-group</a></td>
+                                <td>A container element for checkbox inputs. <code>htmldb-checkbox-group</code> makes it possible
+                                    to select/update/delete multiple records.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-error</a></td>
+                                <td>A container element for the errors.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-field</a></td>
+                                <td>An input element, that holds the current values of the <code>htmldb-form</code> fields.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-form</a></td>
+                                <td>A container for the <code>htmldb-field</code> elements, that automatically updated by <code>htmldb-table</code>.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-input-save</a></td>
+                                <td>A standalone input that automatically update the specific <code>htmldb-table</code> record.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-message</a></td>
+                                <td>A container element for the messages.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-pagination</a></td>
+                                <td>A container element for easily navigating among the pages of <code>htmldb-table</code> element.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-section</a></td>
+                                <td>A container for the elements, that automatically rendered by the related <code>htmldb-table</code>.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-select</a></td>
+                                <td>A select element that automatically populated with the related <code>htmldb-table</code>.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-table</a></td>
+                                <td>Data source element that retrieves and stores data from the server. Also, it validates and posts data to the server.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-table-validation</a></td>
+                                <td>A container element for conditions validated locally before writing a record to <code>htmldb-table</code> element.</td>
+                            </tr>
+                            <tr class="trOdd">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-template</a></td>
+                                <td>A container element for the templates, that are automatically rendered by related <code>htmldb-table</code>.</td>
+                            </tr>
+                            <tr class="trEven">
+                                <td class="col1"></td>
+                                <td><a href="#!">htmldb-toggle</a></td>
+                                <td>A special container for the form fields that automatically displayed or hided for a certain condition.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <p>&nbsp;</p>
                 </div>
 
                 <div class="container scrollspy" id="divExtendElements">
-                    <h2>Extend Your Elements</h2>
-                    <p>Different elements can be derived from built-in elements or previously defined elements.</p>
-                    <div class="divModoCodePreview">
-                        <code>
-<pre>
-<span class="grey-text">/* Registration System Element Declarations */</span>
-Student <span style="color:#069;font-weight:700;">{</span>
-    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Advisor</span><span style="color:#069;font-weight:700;">;</span>
-<span style="color:#069;font-weight:700;">}</span>
-
-Instructor <span style="color:#069;font-weight:700;">{</span>
-    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-<span style="color:#069;font-weight:700;">}</span>
-
-Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Instructor</span> <span style="color:#069;font-weight:700;">{</span>
-    OfficeDay <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Weekday</span><span style="color:#069;font-weight:700;">;</span>
-<span style="color:#069;font-weight:700;">}</span>
-</pre>
-</code>
-                    </div>
-                    <p>In the above example a new element <span class="spanInlineIdentifier">Advisor</span> is defined. The
-                        advisor is in fact an <span class="spanInlineIdentifier">Instructor</span> but an additional property
-                        of office day is added.</p>
-
-                    <p>The member elements can also be extended like the elements.</p>
-                    <div class="divModoCodePreview">
-                        <code>
-<pre>
-<span class="grey-text">/* Registration System Element Declarations */</span>
-Student <span style="color:#069;font-weight:700;">{</span>
-    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Instructor</span> <span style="color:#069;font-weight:700;">{</span>
-        OfficeDay <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Weekday</span><span style="color:#069;font-weight:700;">;</span>
-    <span style="color:#069;font-weight:700;">}</span>
-<span style="color:#069;font-weight:700;">}</span>
-
-Instructor <span style="color:#069;font-weight:700;">{</span>
-    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-<span style="color:#069;font-weight:700;">}</span>
-</pre>
-</code>
-                    </div>
-                    <p>In the above example the member element <span class="spanInlineIdentifier">Advisor</span> of the element
-                        <span class="spanInlineIdentifier">Student</span> extends the element <span class="spanInlineIdentifier">Instructor</span>
-                        adding the property of office day.</p>
-
+                    <h2>Global Variables</h2>
+                    <p>HTMLDB provides some critical information in global variables. This global variables can be used in mustache templates.</p>
+                    <h3><code>$URL</code></h3>
+                    <p><code>$URL</code> global variable holds the URL address of the current page. You can access URL parameters with <code>$URL.parameter</code> notation. 
+                        Additionally <code>$URL</code> accepts integer parameter indices e.g. <code>$URL.1</code> or <code>$URL.-1</code>. 
+                        <code>$URL.1</code> gives the first URL parameter value. 
+                        <code>$URL.-1</code> gives the last URL parameter value.</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="container scrollspy" id="divDifferentStates">
-                    <h2>Different States of the System</h2>
-                    <p>Modo can also represent different states of the system. The at symbol (@) is used to define those
-                        rules.</p>
-                    <div class="divModoCodePreview">
-                        <code>
-<pre>
-<span class="grey-text">/* Registration System Element Declarations */</span>
-Student <span style="color:#069;font-weight:700;">{</span>
-    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
-    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
-    CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Boolean</span><span style="color:#069;font-weight:700;">;</span>
-    <span style="color:#069;font-weight:700;">$</span>CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">true</span> <span style="color:#069;font-weight:700;">@</span> <span style="color:#069;font-weight:700;">($</span>GPA <span style="color:#069;font-weight:700;">&gt;=</span> <span style="color: #3399CC;">2</span><span style="color:#069;font-weight:700;">);</span>
-    <span style="color:#069;font-weight:700;">$</span>CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">false</span> <span style="color:#069;font-weight:700;">@</span> <span style="color:#069;font-weight:700;">($</span>GPA <span style="color:#069;font-weight:700;">&lt;</span> <span style="color: #3399CC;">2</span><span style="color:#069;font-weight:700;">);</span>
-<span style="color:#069;font-weight:700;">}</span>
-</pre>
-</code>
-                    </div>
-                    <p>The above example adds a new member element <span class="spanInlineIdentifier">CanGraduate</span>
-                        to the <span class="spanInlineIdentifier">Student</span> element. The value of this member element
-                        changes for different values of the GPA member element.</p>
+                    <h2>Using Other Table Fields and Element Variables in Mustache Templates</h2>
+                    <p>In some cases, it is required to use other table fields and/or element variables (e.g. current page index, page count, checked record count, etc.) 
+                        in mustache templates. htmldb-table fields are accessible using <code>{{TableName.FieldName}}</code> notation, and also htmldb-pagination, 
+                        <code>htmldb-checkbox-group</code> variables using <code>{{ElementID.VariableName}}</code> in mustache templates. 
+                        HTMLDB uses active records of the htmldb-table instances while parsing mustache templates.</p>
+<!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #062873; font-weight: bold">&lt;form</span> <span style="color: #4070a0">id=&quot;myForm&quot;</span>
+    <span style="color: #4070a0">name=&quot;myForm&quot;</span>
+    <span style="color: #4070a0">method=&quot;post&quot;</span>
+    <span style="color: #4070a0">class=&quot;htmldb-form&quot;</span>
+    <span style="color: #4070a0">data-htmldb-table=&quot;myTable&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
 
-                    <p>For more detailed information, please <a href="index.html#download">download</a> Modo Language Specification
-                        Document.
-                    </p>
+<span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">id=&quot;company_id&quot;</span>
+        <span style="color: #4070a0">name=&quot;company_id&quot;</span>
+        <span style="color: #4070a0">type=&quot;hidden&quot;</span>
+        <span style="color: #4070a0">value=&quot;&quot;</span>
+        <span style="color: #4070a0">class=&quot;htmldb-field&quot;</span>
+        <span style="color: #4070a0">data-htmldb-field=&quot;company_id&quot;</span>
+        <span style="color: #4070a0">data-htmldb-reset-value=&quot;{{companyTable.id}}&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
 
-                    <p>&nbsp;</p>
+<span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">id=&quot;name&quot;</span>
+        <span style="color: #4070a0">name=&quot;name&quot;</span>
+        <span style="color: #4070a0">type=&quot;text&quot;</span>
+        <span style="color: #4070a0">value=&quot;&quot;</span>
+        <span style="color: #4070a0">class=&quot;htmldb-field&quot;</span>
+        <span style="color: #4070a0">data-htmldb-field=&quot;company_name&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;/form&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;companyTable&quot;</span>
+    <span style="color: #4070a0">class=&quot;htmldb-table&quot;</span>
+    <span style="color: #4070a0">data-htmldb-read-url=&quot;company/read&quot;</span>
+    <span style="color: #4070a0">data-htmldb-validate-url=&quot;company/validate&quot;</span>
+    <span style="color: #4070a0">data-htmldb-write-url=&quot;company/write&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/div&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;myFirstTable&quot;</span>
+    <span style="color: #4070a0">class=&quot;htmldb-table&quot;</span>
+    <span style="color: #4070a0">data-htmldb-read-url=&quot;myfirsttable/read&quot;</span>
+    <span style="color: #4070a0">data-htmldb-validate-url=&quot;myfirsttable/validate&quot;</span>
+    <span style="color: #4070a0">data-htmldb-write-url=&quot;myfirsttable/write&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+                    <p>In the example above, there is a form and two <code>htmldb-table</code> instances called <code>companyTable</code> and <code>myFirstTable</code> respectively. 
+                        Also, the form has two inputs. The first input is a hidden input that holds predefined <code>company_id</code> value from <code>companyTable</code>. 
+                        In this case, <code>data-htmldb-reset-value</code> attribute must be specified with the value <code>{{companyTable.id}}</code>. 
+                        So, <code>company_id</code> input value will be automatically reset to the id value of the active record in <code>companyTable</code> instance.</p>
 
                     <p>&nbsp;</p>
                 </div>
+
+                <div class="container scrollspy" id="">
+                    <h2>Using Javascript Functions and Variables in Mustache Templates</h2>
+                    <p>Using Javascript variables and functions in mustache templates can be a time-saver. 
+                        It is very easy to use global Javascript functions and variables in HTMLDB mustache templates.</p>
+<!-- HTML generated using hilite.me --><div class="codeHighlighter" style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #062873; font-weight: bold">&lt;form</span> <span style="color: #4070a0">id=&quot;myForm&quot;</span>
+    <span style="color: #4070a0">name=&quot;myForm&quot;</span>
+    <span style="color: #4070a0">method=&quot;post&quot;</span>
+    <span style="color: #4070a0">class=&quot;htmldb-form&quot;</span>
+    <span style="color: #4070a0">data-htmldb-table=&quot;myTable&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">id=&quot;company_guid&quot;</span>
+        <span style="color: #4070a0">name=&quot;company_guid&quot;</span>
+        <span style="color: #4070a0">type=&quot;hidden&quot;</span>
+        <span style="color: #4070a0">value=&quot;&quot;</span>
+        <span style="color: #4070a0">class=&quot;htmldb-field&quot;</span>
+        <span style="color: #4070a0">data-htmldb-field=&quot;company_guid&quot;</span>
+        <span style="color: #4070a0">data-htmldb-reset-value=&quot;{{:generateCompanyGUID();}}&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">id=&quot;company_calculated_field&quot;</span>
+        <span style="color: #4070a0">name=&quot;company_calculated_field&quot;</span>
+        <span style="color: #4070a0">type=&quot;hidden&quot;</span>
+        <span style="color: #4070a0">value=&quot;&quot;</span>
+        <span style="color: #4070a0">class=&quot;htmldb-field&quot;</span>
+        <span style="color: #4070a0">data-htmldb-field=&quot;company_calculated_field&quot;</span>
+        <span style="color: #4070a0">data-htmldb-reset-value=&quot;{{:2+3;}}&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+
+<span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">id=&quot;company_special_field&quot;</span>
+        <span style="color: #4070a0">name=&quot;company_calculated_field&quot;</span>
+        <span style="color: #4070a0">type=&quot;hidden&quot;</span>
+        <span style="color: #4070a0">value=&quot;&quot;</span>
+        <span style="color: #4070a0">class=&quot;htmldb-field&quot;</span>
+        <span style="color: #4070a0">data-htmldb-field=&quot;company_calculated_field&quot;</span>
+        <span style="color: #4070a0">data-htmldb-reset-value=&quot;{{:Math.sin(Math.PI / 2);}}&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+</pre></div>
+
+                </div>
+
+                <div class="container scrollspy" id="">
+                    <h2>Methods</h2>
+                    <p>HTMLDB provides methods for accessing HTMLDB elements using JavaScript. You can click the following link to view HTMLDB methods.</p>
+                    <p><a href="#!">List of HTMLDB Methods</a></p>
+                    <p>&nbsp;</p>
+                </div>
+                
             </section>
         </div>
     </main>
