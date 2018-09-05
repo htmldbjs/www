@@ -19,38 +19,28 @@
     <meta property="og:image:height" content="435" />
     <meta property="og:description" content="HTMLDB.js is a simple HTML data & template engine written in pure JavaScript.">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favfavicon-64x64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
-	<link rel="manifest" href="assets/img/fav/site.webmanifest">
-	<link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favfavicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/fav/favicon-16x16.png">
+	<link rel="manifest" href="../assets/img/fav/site.webmanifest">
+	<link rel="mask-icon" href="../assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-    <link href="assets/css/ionicons.min.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/main.css">
+    <link href="../assets/css/ionicons.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../assets/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/main.css">
     <title>HTMLDB.js</title>
 </head>
 
 <body>
-    <ul class="side-nav fixed" id="ulMobileMenu">
-        <li class="white center-align"><img style="margin-top: 20px;" src="assets/img/logo.png" width="180" alt="Modo"></li>
-        <li class=""><a class="grey-text" href="index.html">Home</a></li>
-        <li><a class="grey-text" href="contact.html">Contact</a></li>
-        <li class="active"><a id="btnQuickstart" class="aGetStarted" href="get-started.html">Get Started!</a></li>
-        <li><a target="_blank" class="grey-text" href="https://github.com/htmldbjs"><i class="ion-social-github" style="margin-right: 0px;"></i>&nbsp;GitHub</a></li>
-    </ul>
-    <nav id="navbarFixed" class="white hide-on-large-only">
-        <div class="nav-wrapper container">
-            <a href="#" data-activates="ulMobileMenu" class="button-collapse aMobileMenuButton"><i class="ion-navicon-round"></i></a>
-        </div>
-    </nav>
+    <?php include_once(__DIR__ . '/sidenav.php') ?>
     <main id="mainDocumentation" class="row noMargin">
         <!-- Content Start -->
         <div class="wrapper col s12">
             <section id="sectionGetStarted" data-linker="aGetStarted">
+
                 <div class="container scrollspy" id="divUnderstandTheSystem">
                     <h1>Get Started</h1>
                     <h2>Installation</h2>
@@ -103,6 +93,7 @@
 <span style="color: #062873; font-weight: bold">&lt;/html&gt;</span></pre></div>  
                 <p>&nbsp;</p>
                 </div>
+
                 <div class="container scrollspy" id="divDefineMainElements">
                     <h2>Usage</h2>
                     <p>Firstly, create an HTMLDB table. HTMLDB tables are like database tables, 
@@ -262,6 +253,7 @@
 
                 <p>&nbsp;</p>
                 </div>
+
                 <div class="container scrollspy" id="divDefineMemberElements">
                     <h2>Backend Integration</h2>
                     <p>It is easy to integrate HTMLDB with your favorite backend framework.
@@ -539,9 +531,9 @@
         </div>
     </main>
 
-    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/materialize.min.js"></script>
-    <script src="assets/js/documentation.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+    <script src="../assets/js/documentation.js"></script>
 </body>
 
 </html>
