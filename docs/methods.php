@@ -39,7 +39,7 @@
     <main id="mainDocumentation" class="row noMargin">
         <!-- Content Start -->
         <div class="wrapper col s12">
-            <section id="sectionGetStarted" data-linker="aGetStarted"><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.addLeadingZeros</code></h3>
+            <section id="sectionGetStarted" data-linker="aGetStarted"><div class="container"><h1>Methods</h1></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.addLeadingZeros</code></h3>
 <p>This method adds zeros at the beginning of a given <code>text</code> to construct a string with the length of <code>digitCount</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.addLeadingZeros(text, digitCount)</code></pre>
@@ -63,7 +63,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.addSingleQuoteSlashes</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.addSingleQuoteSlashes</code></h3>
 <p>This method adds <code>\</code> characters in front of all single quote <code>'</code> characters within the given <code>text</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.addSingleQuoteSlashes(text)</code></pre>
@@ -83,7 +83,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.addSlashes</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.addSlashes</code></h3>
 <p>This method adds <code>\</code> characters in front of all single quote <code>'</code> and double quote <code>"</code> characters within the given <code>text</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.addSlashes(text)</code></pre>
@@ -103,7 +103,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.callReadQueueCallbacks</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.callReadQueueCallbacks</code></h3>
 <p>This method calls all the callback functions after reading the htmldb-table element given with <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -124,7 +124,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.canWriteTable</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.canWriteTable</code></h3>
 <p>This method checks whether an update or insert operation is made or not. All the records that has been updated and inserted stored in a different table called writer tables.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.canWriteTable(tableElement)</code></pre>
@@ -144,7 +144,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if at least one record inserted or updated within the given <code>tableElement</code>. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.checkIfIndexedDBTableExists</code></h3>
+<p>This method returns <code>true</code> if at least one record inserted or updated within the given <code>tableElement</code>. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.checkIfIndexedDBTableExists</code></h3>
 <p>This method checks indexedDB object store has been created for the given <code>tableElement</code> or not.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -165,7 +165,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the indexedDB object store exists for the <code>tableElement</code>. Otherwise return <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.checkTableValidation</code></h3>
+<p>This method returns <code>true</code> if the indexedDB object store exists for the <code>tableElement</code>. Otherwise return <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.checkTableValidation</code></h3>
 <p>This method validates <code>tableElement</code>, for the given <code>object</code>, using <code>validationElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -194,7 +194,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the <code>object</code> is validated with the given <code>validationElement</code>. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clearLocalTable</code></h3>
+<p>This method returns <code>true</code> if the <code>object</code> is validated with the given <code>validationElement</code>. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clearLocalTable</code></h3>
 <p>This method clears all the records stored in the indexedDB object store for the given <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -215,7 +215,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clearReaderTable</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clearReaderTable</code></h3>
 <p>This method clears all the records stored in the reader table within the given <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -236,7 +236,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clearWriterTable</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clearWriterTable</code></h3>
 <p>This method clears all the records stored in the writer table within the given <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -257,7 +257,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clonePaginationElement</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.clonePaginationElement</code></h3>
 <p>This method clones pagination item <code>element</code> for the given <code>page</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -282,7 +282,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.convertFormToObject</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.convertFormToObject</code></h3>
 <p>This method converts <code>htmldb-field</code> elements within the <code>form</code> to a key-value associated JavaScript object.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.convertFormToObject(form, defaultObject)</code></pre>
@@ -306,7 +306,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns constructed JavaScript object based on <code>htmldb-field</code> element values.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.convertListRowToObject</code></h3>
+<p>This method returns constructed JavaScript object based on <code>htmldb-field</code> element values.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.convertListRowToObject</code></h3>
 <p>This method converts data, retreived from the server, to a key-value associated JavaScript object.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -331,7 +331,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns constructed JavaScript object.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.convertRowToObject</code></h3>
+<p>This method returns constructed JavaScript object.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.convertRowToObject</code></h3>
 <p>This method converts data, stored in the reader table, to a key-value associated JavaScript object.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -356,7 +356,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns constructed JavaScript object.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.createHelperElements</code></h3>
+<p>This method returns constructed JavaScript object.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.createHelperElements</code></h3>
 <p>This method creates HTMLDB helper elements during initialization process.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -377,7 +377,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.createNewIframeAndForm</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.createNewIframeAndForm</code></h3>
 <p>This method creates new HTMLDB <code>IFRAME</code> (for GET operations) and <code>FORM</code> (for POST operations) for the specific <code>tableElement</code>. For each GET and POST operation HTMLDB creates new instances of <code>IFRAME</code> and <code>FORM</code> elements. This makes it possible to make multiple GET/POST operations on a single <code>htmldb-table</code> element.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -402,7 +402,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.createPaginationElements</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.createPaginationElements</code></h3>
 <p>This method creates inner elements of the <code>htmldb-pagination</code> element.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -423,7 +423,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.delete</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.delete</code></h3>
 <p>This method deletes the record specified by <code>id</code> from <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.delete(tableElement, id, className)</code></pre>
@@ -451,7 +451,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.deleteMarkedRows</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.deleteMarkedRows</code></h3>
 <p>This method deletes the rows from the <code>parent</code> that contains the class specified by <code>className</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -476,7 +476,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doActiveFormFieldUpdate</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doActiveFormFieldUpdate</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -501,7 +501,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doAddButtonClick</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doAddButtonClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -522,7 +522,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doAddOptionClick</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doAddOptionClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -543,7 +543,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doCheckboxClick</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doCheckboxClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -564,7 +564,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doEditButtonClick</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doEditButtonClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -585,7 +585,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doIndexedDBUpgradeNeeded</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doIndexedDBUpgradeNeeded</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -593,7 +593,7 @@
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doPaginationButtonClick</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doPaginationButtonClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -614,7 +614,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doParentElementToggle</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doParentElementToggle</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -635,7 +635,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doReaderIframeDefaultLoad</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doReaderIframeDefaultLoad</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -656,7 +656,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doReaderIframeLoad</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doReaderIframeLoad</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -677,7 +677,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doRefreshButtonClick</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doRefreshButtonClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -685,7 +685,7 @@
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveButtonClick</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveButtonClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -706,7 +706,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveInputEvent</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveInputEvent</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -727,7 +727,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveInputEventNow</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveInputEventNow</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -748,7 +748,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveInputKeyUp</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSaveInputKeyUp</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -769,7 +769,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSelectChange</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSelectChange</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -790,7 +790,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSortButtonClick</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doSortButtonClick</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -811,7 +811,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doTableWrite</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doTableWrite</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -832,7 +832,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doValidatorIframeLoad</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doValidatorIframeLoad</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -853,7 +853,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doWriterIframeLoad</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.doWriterIframeLoad</code></h3>
 <p>This method is an event handler for the events triggered by inner operations.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -874,7 +874,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.e</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.e</code></h3>
 <p>This method is an alias for <code>document.getElementById</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.e(elementId)</code></pre>
@@ -894,7 +894,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns DOM element if the element specified by <code>elementId</code> is found, returns <code>undefined</code> otherwise.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.escapeJSONString</code></h3>
+<p>This method returns DOM element if the element specified by <code>elementId</code> is found, returns <code>undefined</code> otherwise.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.escapeJSONString</code></h3>
 <p>This method modifies the special characters in <code>text</code>, so that it can be used in JSON.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.escapeJSONString(text)</code></pre>
@@ -914,7 +914,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBExpression</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBExpression</code></h3>
 <p>This method calculates the values and replaces mustache templates (between <code>{{</code> and <code>}}</code>) and returns the modified string.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.evaluateHTMLDBExpression(expression, parent)</code></pre>
@@ -938,7 +938,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBExpressionWithObject</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBExpressionWithObject</code></h3>
 <p>This method calculates the values and replaces mustache templates (between <code>{{</code> and <code>}}</code>) based on given <code>object</code> and returns the modified string.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.evaluateHTMLDBExpressionWithObject(expression, object)</code></pre>
@@ -962,7 +962,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBGlobalObject</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBGlobalObject</code></h3>
 <p>This method calculates the values and replaces mustache templates (between <code>{{</code> and <code>}}</code>) of the global objects (eg. $URL) and returns the modified string.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.evaluateHTMLDBGlobalObject(globalObject, parameter)</code></pre>
@@ -986,7 +986,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBJSCode</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.evaluateHTMLDBJSCode</code></h3>
 <p>This method calculates the values and replaces mustache templates (between <code>{{:</code> and <code>}}</code>) based on JavaScript expression and returns the modified string.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.evaluateHTMLDBJSCode(code)</code></pre>
@@ -1006,7 +1006,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBCheckboxGroup</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBCheckboxGroup</code></h3>
 <p>This method finds container <code>htmldb-checkbox-group</code> element for the given <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.exploreHTMLDBCheckboxGroup(element)</code></pre>
@@ -1026,7 +1026,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBForm</code></h3>
+<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBForm</code></h3>
 <p>This method finds container <code>htmldb-form</code> element for the given <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.exploreHTMLDBForm(element)</code></pre>
@@ -1046,7 +1046,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBPagination</code></h3>
+<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBPagination</code></h3>
 <p>This method finds container <code>htmldb-pagination</code> element for the given <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.exploreHTMLDBPagination(element)</code></pre>
@@ -1066,7 +1066,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBTable</code></h3>
+<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.exploreHTMLDBTable</code></h3>
 <p>This method finds container <code>htmldb-table</code> element for the given <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.exploreHTMLDBTable(element)</code></pre>
@@ -1086,14 +1086,14 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractChildTables</code></h3>
+<p>This method returns found container element or <code>false</code> in failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractChildTables</code></h3>
 <p>This method returns all parent and child tables in an array.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.extractChildTables()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns all parent and child tables in an array.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractFormToggleFields</code></h3>
+<p>This method returns all parent and child tables in an array.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractFormToggleFields</code></h3>
 <p>This method returns an array listing <code>htmldb-field</code> names that is used in <code>filter</code> string.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.extractFormToggleFields(filter, parent)</code></pre>
@@ -1117,7 +1117,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns an array listing <code>htmldb-field</code> names that is used in <code>filter</code> string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractHTMLDBExpressionTables</code></h3>
+<p>This method returns an array listing <code>htmldb-field</code> names that is used in <code>filter</code> string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractHTMLDBExpressionTables</code></h3>
 <p>This method returns an array listing <code>htmldb-table</code> names that is used in <code>expression</code> string.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.extractHTMLDBExpressionTables(expression)</code></pre>
@@ -1137,14 +1137,14 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns an array listing <code>htmldb-table</code> names that is used in <code>expression</code> string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractParentTables</code></h3>
+<p>This method returns an array listing <code>htmldb-table</code> names that is used in <code>expression</code> string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractParentTables</code></h3>
 <p>This method returns all child and parent tables in an array. This method returns the inverse value that returned from <code>HTMLDB.extractChildTables</code> method.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.extractParentTables()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns all child and parent tables in an array.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractToggleParentElement</code></h3>
+<p>This method returns all child and parent tables in an array.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.extractToggleParentElement</code></h3>
 <p>This method returns container <code>htmldb-section</code> or <code>htmldb-form</code> element for the given <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.extractToggleParentElement(element)</code></pre>
@@ -1164,7 +1164,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns container <code>htmldb-section</code> or <code>htmldb-form</code> element for the given <code>element</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateDateTimeGUID</code></h3>
+<p>This method returns container <code>htmldb-section</code> or <code>htmldb-form</code> element for the given <code>element</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateDateTimeGUID</code></h3>
 <p>This method generates unique identification string based on integer value of current time (eg. &quot;1534970823983154&quot;).</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.generateDateTimeGUID(prefix)</code></pre>
@@ -1184,7 +1184,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns generated GUID as string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateFilterFunctionBlock</code></h3>
+<p>This method returns generated GUID as string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateFilterFunctionBlock</code></h3>
 <p>This method generates filter function body for the given <code>filter</code> and <code>parent</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1209,7 +1209,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns generated function body according to the <code>filter</code> value.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateFormHTML</code></h3>
+<p>This method returns generated function body according to the <code>filter</code> value.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateFormHTML</code></h3>
 <p>This method generates <code>FORM</code> content for posting values to the server for the given <code>tableElement</code> and <code>row</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1238,7 +1238,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns generated <code>FORM</code> content.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateGUID</code></h3>
+<p>This method returns generated <code>FORM</code> content.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateGUID</code></h3>
 <p>This method generates unique identification string (eg. &quot;2018822234943a876497&quot;).</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.generateGUID(prefix)</code></pre>
@@ -1258,7 +1258,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns generated GUID as string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateTDHTML</code></h3>
+<p>This method returns generated GUID as string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateTDHTML</code></h3>
 <p>This method generates <code>TR</code> content for the given <code>tableElement</code> and <code>object</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1291,7 +1291,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns generated <code>TR</code> content.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateTableFilterFunctionString</code></h3>
+<p>This method returns generated <code>TR</code> content.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateTableFilterFunctionString</code></h3>
 <p>This method generates filter function body for the given <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1312,7 +1312,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns generated function body.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateTemplateRenderFunctionString</code></h3>
+<p>This method returns generated function body.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.generateTemplateRenderFunctionString</code></h3>
 <p>This method generates function body for the templates for given <code>templateElement</code>, <code>tableElementId</code> and <code>targetElementId</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1341,7 +1341,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns generated function body.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.get</code></h3>
+<p>This method returns generated function body.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.get</code></h3>
 <p>This method gets the record specified by <code>id</code> from <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.get(tableElement, id)</code></pre>
@@ -1365,7 +1365,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the record in an JavaScript object specified by <code>id</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getActiveId</code></h3>
+<p>This method returns the record in an JavaScript object specified by <code>id</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getActiveId</code></h3>
 <p>This method returns the active <code>id</code> of the given <code>tableElement</code>. HTMLDB uses active <code>id</code> values as a table cursor. When a table data retreived from the server, active <code>id</code> is set to the first <code>id</code> value. If an <code>htmldb-table</code> element value is set to another value, all related elements (<code>htmldb-table</code>, <code>htmldb-form</code>, <code>htmldb-template</code> and etc.) will be updated respectively.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.getActiveId(tableElement)</code></pre>
@@ -1385,7 +1385,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the active <code>id</code> of the <code>tableElement</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getColumnNames</code></h3>
+<p>This method returns the active <code>id</code> of the <code>tableElement</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getColumnNames</code></h3>
 <p>This method returns columns names in an array for the given <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.getColumnNames(tableElement, sortColumns)</code></pre>
@@ -1409,7 +1409,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns column names in an array.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getEventTarget</code></h3>
+<p>This method returns column names in an array.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getEventTarget</code></h3>
 <p>This method gets the event target element.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1430,7 +1430,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns event target element.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getFormFieldActiveValue</code></h3>
+<p>This method returns event target element.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getFormFieldActiveValue</code></h3>
 <p>This method gets the current value of the <code>field</code> of the given <code>formElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.getFormFieldActiveValue(formElement, field)</code></pre>
@@ -1454,7 +1454,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the current value of the <code>field</code> in the <code>formElement</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getHTMLDBParameter</code></h3>
+<p>This method returns the current value of the <code>field</code> in the <code>formElement</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getHTMLDBParameter</code></h3>
 <p>This method gets the HTMLDB element attribute value.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.getHTMLDBParameter(element, parameter)</code></pre>
@@ -1478,7 +1478,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the HTMLDB element attribute value.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getInputValue</code></h3>
+<p>This method returns the HTMLDB element attribute value.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getInputValue</code></h3>
 <p>This method gets the current value of the given <code>input</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.getInputValue(input)</code></pre>
@@ -1498,7 +1498,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the current value of the given <code>input</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getMaxPriority</code></h3>
+<p>This method returns the current value of the given <code>input</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getMaxPriority</code></h3>
 <p>This method gets maximum priority value of the given <code>tableIds</code>. HTMLDB uses an integer value starting from zero to determine the load order of the <code>htmldb-table</code> elements within an HTML page. This method calculates the maximum priority value of the given <code>tableIds</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1519,7 +1519,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the priority value.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getSelectNewOptionValue</code></h3>
+<p>This method returns the priority value.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getSelectNewOptionValue</code></h3>
 <p>This method returns the option value of &quot;Add New&quot; option.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1540,7 +1540,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the option value.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getTableFieldActiveValue</code></h3>
+<p>This method returns the option value.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getTableFieldActiveValue</code></h3>
 <p>This method gets the current value of the <code>column</code> of the given <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.getTableFieldActiveValue(tableElement, column)</code></pre>
@@ -1564,7 +1564,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns the current value of the <code>column</code> in the <code>tableElement</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getURLParameter</code></h3>
+<p>This method returns the current value of the <code>column</code> in the <code>tableElement</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.getURLParameter</code></h3>
 <p>This method splits current page url using <code>/</code> character and returns the part specified by <code>index</code>. This method is used by $URL global variable.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.getURLParameter(index)</code></pre>
@@ -1584,7 +1584,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method splits current page URL using <code>/</code> character and returns the part specified by <code>index</code>. </p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hasHTMLDBParameter</code></h3>
+<p>This method splits current page URL using <code>/</code> character and returns the part specified by <code>index</code>. </p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hasHTMLDBParameter</code></h3>
 <p>This method checks whether HTMLDB element has an attribute value specified by <code>parameter</code> or not.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.hasHTMLDBParameter(element, parameter)</code></pre>
@@ -1608,14 +1608,14 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the given <code>element</code> has an attribute value specified by <code>parameter</code>. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hasLocalTable</code></h3>
+<p>This method returns <code>true</code> if the given <code>element</code> has an attribute value specified by <code>parameter</code>. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hasLocalTable</code></h3>
 <p>This method checks whether there is a local <code>htmldb-table</code> element or not within the current page.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.hasLocalTable()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if there is at least one local <code>htmldb-table</code> element within the current page. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hideLoader</code></h3>
+<p>This method returns <code>true</code> if there is at least one local <code>htmldb-table</code> element within the current page. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hideLoader</code></h3>
 <p>This method hides the loader of the <code>tableElement</code> with the <code>type</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.hideLoader(tableElement, type)</code></pre>
@@ -1639,21 +1639,21 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hideLoaders</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.hideLoaders</code></h3>
 <p>This method hides all the loaders within the current page.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.hideLoaders()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initialize</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initialize</code></h3>
 <p>This method initializes all HTMLDB elements within the current page.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initialize()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBAddButtons</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBAddButtons</code></h3>
 <p>This method initializes <code>htmldb-button-add</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBAddButtons(parent)</code></pre>
@@ -1673,7 +1673,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBButtons</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBButtons</code></h3>
 <p>This method initializes <code>htmldb-button-add</code>, <code>htmldb-button-edit</code>, <code>htmldb-button-refresh</code>, <code>htmldb-button-save</code> and <code>htmldb-button-sort</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBButtons(parent)</code></pre>
@@ -1693,7 +1693,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBEditButtons</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBEditButtons</code></h3>
 <p>This method initializes <code>htmldb-button-edit</code> elements within <code>parent</code> related to <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBEditButtons(parent, tableElement)</code></pre>
@@ -1717,7 +1717,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBFormFields</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBFormFields</code></h3>
 <p>This method initializes <code>htmldb-field</code> elements within the given <code>formElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBFormFields(formElement)</code></pre>
@@ -1737,21 +1737,21 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBFormTables</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBFormTables</code></h3>
 <p>This method initializes <code>htmldb-table</code> elements triggered with FORM elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBFormTables()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBForms</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBForms</code></h3>
 <p>This method initializes <code>htmldb-form</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBForms()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBIndexedDB</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBIndexedDB</code></h3>
 <p>This method initializes indexedDB and creates all the object stores required.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBIndexedDB(functionDone)</code></pre>
@@ -1771,7 +1771,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBInputs</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBInputs</code></h3>
 <p>This method initializes <code>htmldb-input-save</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBInputs(parent)</code></pre>
@@ -1791,7 +1791,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBPaginations</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBPaginations</code></h3>
 <p>This method initializes <code>htmldb-pagination</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBPaginations(parent)</code></pre>
@@ -1811,7 +1811,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBRefreshButtons</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBRefreshButtons</code></h3>
 <p>This method initializes <code>htmldb-button-refresh</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBRefreshButtons(parent)</code></pre>
@@ -1831,7 +1831,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSaveButtons</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSaveButtons</code></h3>
 <p>This method initializes <code>htmldb-button-save</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBSaveButtons(parent)</code></pre>
@@ -1851,7 +1851,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSaveInputs</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSaveInputs</code></h3>
 <p>This method initializes <code>htmldb-input-save</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBSaveInputs(parent)</code></pre>
@@ -1871,21 +1871,21 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSections</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSections</code></h3>
 <p>This method initializes <code>htmldb-section</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBSections()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSelects</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSelects</code></h3>
 <p>This method initializes <code>htmldb-select</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBSelects()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSortButtons</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBSortButtons</code></h3>
 <p>This method initializes <code>htmldb-button-sort</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBSortButtons(parent)</code></pre>
@@ -1905,28 +1905,28 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBTables</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBTables</code></h3>
 <p>This method initializes <code>htmldb-table</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBTables()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBTemplates</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBTemplates</code></h3>
 <p>This method initializes <code>htmldb-template</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBTemplates()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBToggles</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeHTMLDBToggles</code></h3>
 <p>This method initializes <code>htmldb-toggle</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.initializeHTMLDBToggles()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeLocalTable</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeLocalTable</code></h3>
 <p>This method initializes indexedDB object stores for the given <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1947,7 +1947,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeLocalTableRows</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeLocalTableRows</code></h3>
 <p>This method reads data from indexedDB object store for the given <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1976,7 +1976,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeReadQueue</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.initializeReadQueue</code></h3>
 <p>This method initializes global read queue.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -1984,7 +1984,7 @@
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.insert</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.insert</code></h3>
 <p>This method inserts record specified by <code>object</code> into <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.insert(tableElement, object, className)</code></pre>
@@ -2012,7 +2012,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isHTMLDBParameter</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isHTMLDBParameter</code></h3>
 <p>This method checks whether HTMLDB element has an attribute with the value of &quot;true&quot; or &quot;1&quot;.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.isHTMLDBParameter(element, parameter)</code></pre>
@@ -2036,14 +2036,14 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the attribute value specified by <code>parameter</code> is &quot;true&quot; or &quot;1&quot;. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isIdle</code></h3>
+<p>This method returns <code>true</code> if the attribute value specified by <code>parameter</code> is &quot;true&quot; or &quot;1&quot;. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isIdle</code></h3>
 <p>This method checks whether there is an <code>htmldb-table</code> element in loading mode or not within the current page.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.isIdle()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns <code>true</code>, if all <code>htmldb-table</code> elements are not in loading mode. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isInReadQueue</code></h3>
+<p>This method returns <code>true</code>, if all <code>htmldb-table</code> elements are not in loading mode. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isInReadQueue</code></h3>
 <p>This method checks whether <code>tableElement</code> is in read queue or not.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.isInReadQueue(tableElement)</code></pre>
@@ -2063,7 +2063,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if <code>tableElement</code> is in read queue. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isLetter</code></h3>
+<p>This method returns <code>true</code> if <code>tableElement</code> is in read queue. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isLetter</code></h3>
 <p>This method checks whether the given <code>text</code> is an alphanumeric character (letter) or not.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.isLetter(text)</code></pre>
@@ -2083,14 +2083,14 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the given <code>text</code> is letter. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isLoading</code></h3>
+<p>This method returns <code>true</code> if the given <code>text</code> is letter. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isLoading</code></h3>
 <p>This method checks whether there is an <code>htmldb-table</code> element in loading mode or not within the current page.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.isLoading()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns <code>true</code>, if at least one <code>htmldb-table</code> element is in loading mode. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isNewObject</code></h3>
+<p>This method returns <code>true</code>, if at least one <code>htmldb-table</code> element is in loading mode. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isNewObject</code></h3>
 <p>This method checks whether the given <code>object</code> is new or not.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.isNewObject(object)</code></pre>
@@ -2110,7 +2110,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the <code>object</code> is new. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isNumeric</code></h3>
+<p>This method returns <code>true</code> if the <code>object</code> is new. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.isNumeric</code></h3>
 <p>This method checks whether the given <code>text</code> is numeric (letter) or not.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.isNumeric(text)</code></pre>
@@ -2130,7 +2130,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the given <code>text</code> is numeric. Otherwise returns <code>false</code>.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.markRows</code></h3>
+<p>This method returns <code>true</code> if the given <code>text</code> is numeric. Otherwise returns <code>false</code>.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.markRows</code></h3>
 <p>This method adds the given <code>className</code> to the rows in the <code>parent</code> table.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.markRows(parent, className)</code></pre>
@@ -2154,7 +2154,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.parseObjectDefaults</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.parseObjectDefaults</code></h3>
 <p>This method parses given JSON string <code>defaults</code> into <code>object</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.parseObjectDefaults(object, defaults)</code></pre>
@@ -2178,7 +2178,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns modified object.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.processReadQueue</code></h3>
+<p>This method returns modified object.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.processReadQueue</code></h3>
 <p>This method makes read operations according to current <code>htmldb-table</code> priority.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -2186,7 +2186,7 @@
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.q</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.q</code></h3>
 <p>This method is an alias for <code>document.body.querySelectorAll</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.q(selector)</code></pre>
@@ -2206,7 +2206,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns DOM element node list specified by <code>selector</code>. It returns empty node list, if nothing is found.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.read</code></h3>
+<p>This method returns DOM element node list specified by <code>selector</code>. It returns empty node list, if nothing is found.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.read</code></h3>
 <p>This method reads records from server/indexedDB or parent table and populates <code>htmldb-table</code> element specified by <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.read(tableElement, functionDone)</code></pre>
@@ -2230,7 +2230,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if the read operation has been successfully initiated, returns <code>false</code> otherwise.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.readChildTable</code></h3>
+<p>This method returns <code>true</code> if the read operation has been successfully initiated, returns <code>false</code> otherwise.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.readChildTable</code></h3>
 <p>This method reads records from parent table and populates <code>htmldb-table</code> element specified by <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.readChildTable(tableElement, functionDone)</code></pre>
@@ -2254,7 +2254,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if child table succesfully read, returns <code>false</code> if an error occurs.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.readLocal</code></h3>
+<p>This method returns <code>true</code> if child table succesfully read, returns <code>false</code> if an error occurs.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.readLocal</code></h3>
 <p>This method reads records from related indexedDB object store and populates <code>htmldb-table</code> element specified by <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.readLocal(tableElement, functionDone)</code></pre>
@@ -2278,7 +2278,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> if local table succesfully read, returns <code>false</code> if an error occurs.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.registerFormElementEvent</code></h3>
+<p>This method returns <code>true</code> if local table succesfully read, returns <code>false</code> if an error occurs.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.registerFormElementEvent</code></h3>
 <p>This method attaches suitable event (eg. input, change, click) according to the form input specified by <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.registerFormElementEvent(element, functionEvent)</code></pre>
@@ -2302,7 +2302,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.registerFormToggleEvents</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.registerFormToggleEvents</code></h3>
 <p>This method finds and attaches suitable toggle events to the <code>form</code> elements.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.registerFormToggleEvents(form)</code></pre>
@@ -2322,7 +2322,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removeFromReadingQueue</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removeFromReadingQueue</code></h3>
 <p>This method removes <code>tableElement</code> from reading queue.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -2343,7 +2343,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removeIframeAndForm</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removeIframeAndForm</code></h3>
 <p>This method removes HTMLDB <code>IFRAME</code> (for GET operations) and <code>FORM</code> (for POST operations) for the specific <code>tableElement</code>. For each GET and POST operation HTMLDB creates new instances of <code>IFRAME</code> and <code>FORM</code> elements. This makes it possible to make multiple GET/POST operations on a single <code>htmldb-table</code> element. These elements are removed after completing GET/POST operation.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -2368,7 +2368,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removePaginationElements</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removePaginationElements</code></h3>
 <p>This method removes <code>htmldb-pagination-element</code> elements from the container <code>element</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -2389,7 +2389,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removeReadQueueCallbacks</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.removeReadQueueCallbacks</code></h3>
 <p>This method clears all read queue callback functions.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -2397,7 +2397,7 @@
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.render</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.render</code></h3>
 <p>This method renders all related elements (eg. <code>htmldb-form</code>, <code>htmldb-section</code>, <code>htmldb-template</code>, <code>htmldb-pagination</code>) of <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.render(tableElement, functionDone)</code></pre>
@@ -2421,7 +2421,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderCheckboxGroup</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderCheckboxGroup</code></h3>
 <p>This method renders the given <code>checkboxGroup</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderCheckboxGroup(checkboxGroup)</code></pre>
@@ -2441,7 +2441,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderCheckboxGroups</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderCheckboxGroups</code></h3>
 <p>This method renders all <code>htmldb-checkbox-group</code> elements related to <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderCheckboxGroups(tableElement)</code></pre>
@@ -2461,7 +2461,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderElementWithObject</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderElementWithObject</code></h3>
 <p>This method renders container <code>element</code> and child elements that have attributes and contents including mustache templates with the given <code>object</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderElementWithObject(element, object)</code></pre>
@@ -2485,7 +2485,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderFormElement</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderFormElement</code></h3>
 <p>This method renders all <code>form</code> inputs with the given <code>object</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderFormElement(form, object)</code></pre>
@@ -2509,7 +2509,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderForms</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderForms</code></h3>
 <p>This method renders all the forms related to <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderForms(tableElement)</code></pre>
@@ -2529,7 +2529,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderPaginationElement</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderPaginationElement</code></h3>
 <p>This method renders a specific <code>htmldb-pagination</code> element with the given <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderPaginationElement(element)</code></pre>
@@ -2549,7 +2549,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderPaginations</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderPaginations</code></h3>
 <p>This method renders all <code>htmldb-pagination</code> elements related to <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderPaginations(tableElement)</code></pre>
@@ -2569,7 +2569,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSectionElement</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSectionElement</code></h3>
 <p>This method renders a specific <code>htmldb-section</code> element with the given <code>element</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderSectionElement(element)</code></pre>
@@ -2589,7 +2589,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSections</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSections</code></h3>
 <p>This method renders all <code>htmldb-section</code> elements related to <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderSections(tableElement)</code></pre>
@@ -2609,7 +2609,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSelectElement</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSelectElement</code></h3>
 <p>This method renders a specific <code>htmldb-select</code> element with the given <code>select</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderSelectElement(select)</code></pre>
@@ -2629,7 +2629,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSelects</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderSelects</code></h3>
 <p>This method renders all <code>htmldb-select</code> elements related to <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderSelects(tableElement)</code></pre>
@@ -2649,7 +2649,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderTemplates</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.renderTemplates</code></h3>
 <p>This method renders all <code>htmldb-template</code> elements related to <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.renderTemplates(tableElement)</code></pre>
@@ -2669,7 +2669,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.resetForm</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.resetForm</code></h3>
 <p>This method resets the given <code>form</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.resetForm(form)</code></pre>
@@ -2689,7 +2689,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.resetWriterLoop</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.resetWriterLoop</code></h3>
 <p>This method resets or initializes HTMLDB writer loop. HTMLDB periodically checks all <code>htmldb-table</code> elements if there is an insert/update and/or delete operation. If there is an insert/update and/or delete operation <code>HTMLDB.write</code> method is called for each <code>htmldb-table</code> element.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -2697,7 +2697,7 @@
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns the modified string.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.setActiveId</code></h3>
+<p>This method returns the modified string.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.setActiveId</code></h3>
 <p>This method sets the active <code>id</code> of the given <code>tableElement</code>. HTMLDB uses active <code>id</code> values as a table cursor. When a table data retreived from the server, active <code>id</code> is set to the first <code>id</code> value. If an <code>htmldb-table</code> element value is set to another value, all related elements (<code>htmldb-table</code>, <code>htmldb-form</code>, <code>htmldb-template</code> and etc.) will be updated respectively.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.setActiveId(tableElement, id, silent)</code></pre>
@@ -2725,7 +2725,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.setColumnNames</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.setColumnNames</code></h3>
 <p>This method sets columns names using the <code>object</code> for the given <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.setColumnNames(tableElement, object)</code></pre>
@@ -2749,7 +2749,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.setInputValue</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.setInputValue</code></h3>
 <p>This method assigns the <code>value</code> to the given <code>input</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.setInputValue(input, value)</code></pre>
@@ -2773,7 +2773,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.showError</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.showError</code></h3>
 <p>This method triggers <code>htmldbonerror</code> event for the <code>tableElement</code> with the <code>errorText</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.showError(tableElement, errorText)</code></pre>
@@ -2797,7 +2797,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.showLoader</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.showLoader</code></h3>
 <p>This method shows the loader of the <code>tableElement</code> with the <code>type</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.showLoader(tableElement, type)</code></pre>
@@ -2821,7 +2821,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.showMessage</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.showMessage</code></h3>
 <p>This method triggers <code>htmldbonmessage</code> event for the <code>tableElement</code> with the <code>errorText</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.showMessage(tableElement, messageText)</code></pre>
@@ -2845,7 +2845,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.stop</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.stop</code></h3>
 <p>This method stops the <code>tableElement</code> loading operations and hide related loaders immediately.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.stop(tableElement)</code></pre>
@@ -2865,7 +2865,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.storeSectionElementTemplates</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.storeSectionElementTemplates</code></h3>
 <p>This method stores initial attribute values and contents of the given <code>element</code> for future use.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.storeSectionElementTemplates(element)</code></pre>
@@ -2885,7 +2885,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.update</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.update</code></h3>
 <p>This method updates the record specified by <code>id</code> in the <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.update(tableElement, id, object, className)</code></pre>
@@ -2917,7 +2917,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateLocal</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateLocal</code></h3>
 <p>This method updates indexedDB object store of the given <code>tableElement</code> with the given <code>object</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -2950,7 +2950,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueue</code></h3>
+<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueue</code></h3>
 <p>This method adds <code>tableElement</code> and its child elements in the read queue.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.updateReadQueue(tableElement)</code></pre>
@@ -2970,7 +2970,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueueByParentTable</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueueByParentTable</code></h3>
 <p>This method adds child elements of the <code>tableElement</code> in the read queue.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.updateReadQueueByParentTable(tableElement)</code></pre>
@@ -2990,7 +2990,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueueCallbacks</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueueCallbacks</code></h3>
 <p>This method adds a callback function for the <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.updateReadQueueCallbacks(tableElement, callbackFunction)</code></pre>
@@ -3014,7 +3014,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueueWithParameter</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateReadQueueWithParameter</code></h3>
 <p>This method adds htmldb-table elements with the given <code>element</code> and <code>parameter</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.updateReadQueueWithParameter(element, parameter)</code></pre>
@@ -3038,7 +3038,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateTableFilterFunction</code></h3>
+<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.updateTableFilterFunction</code></h3>
 <p>This method re-generates the filter function of htmldb-table element specified by <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.updateTableFilterFunction(tableElement)</code></pre>
@@ -3058,7 +3058,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validate</code></h3>
+<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validate</code></h3>
 <p>This method validates the record specified by <code>object</code> to be inserted or updated in the <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.validate(tableElement, object, functionDone)</code></pre>
@@ -3086,7 +3086,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateHTMLDBPaginationDefinition</code></h3>
+<p>This method returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateHTMLDBPaginationDefinition</code></h3>
 <p>This method validates the definition of given <code>element</code> as an <code>htmldb-pagination</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -3107,7 +3107,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateHTMLDBTableDefinition</code></h3>
+<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateHTMLDBTableDefinition</code></h3>
 <p>This method validates the definition of given <code>element</code> as an <code>htmldb-table</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -3128,7 +3128,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateHTMLDBTemplateDefinition</code></h3>
+<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateHTMLDBTemplateDefinition</code></h3>
 <p>This method validates the definition of given <code>element</code> as an <code>htmldb-template</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -3149,7 +3149,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateLocal</code></h3>
+<p>This method returns <code>true</code> on success, and returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateLocal</code></h3>
 <p>This method validates the record locally specified by <code>object</code> to be inserted or updated in the <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -3178,7 +3178,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateRemote</code></h3>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.validateRemote</code></h3>
 <p>This method validates the record remotely specified by <code>object</code> to be inserted or updated in the <code>tableElement</code>.</p>
 <p>Please note that this method is used for inner operations, there is no need to call directly.</p>
 <h4>Description</h4>
@@ -3207,7 +3207,7 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.write</code></h3>
+<p>This method returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.write</code></h3>
 <p>This method writes records to server of the <code>htmldb-table</code> element specified by <code>tableElement</code>.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.write(tableElement, delayed, functionDone)</code></pre>
@@ -3235,14 +3235,14 @@
 </tbody>
 </table>
 <h4>Returns</h4>
-<p>This method returns <code>false</code> on failure.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.writeTables</code></h3>
+<p>This method returns <code>false</code> on failure.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>HTMLDB.writeTables</code></h3>
 <p>This method checks all <code>htmldb-table</code> elements for inserted/updated and deleted records and then, writes all updated records to the server.</p>
 <h4>Description</h4>
 <pre><code class="language-javascript">HTMLDB.writeTables()</code></pre>
 <h4>Parameters</h4>
 <p>This method has no parameters.</p>
 <h4>Returns</h4>
-<p>This method returns nothing.</p></div></section>
+<p>This method returns nothing.</p></div><div class="divider"></div><p>&nbsp;</p></section>
         </div>
     </main>
 

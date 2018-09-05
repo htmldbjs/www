@@ -39,7 +39,7 @@
     <main id="mainDocumentation" class="row noMargin">
         <!-- Content Start -->
         <div class="wrapper col s12">
-            <section id="sectionGetStarted" data-linker="aGetStarted"><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-add</code></h3>
+            <section id="sectionGetStarted" data-linker="aGetStarted"><div class="container"><h1>Elements</h1></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-add</code></h3>
 <p>An action button is used for adding a new record to the specified table. When <code>htmldb-button-add</code> button is clicked related forms are reset.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;button class="htmldb-button-add"
@@ -81,7 +81,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-edit</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-edit</code></h3>
 <p>An action button is used for editing a specific record. When <code>htmldb-button-edit</code> button is clicked <code>htmldb-table</code> element's active id is set to the specified record. Additionally, all related form fields are populated with the values of the record.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;button class="htmldb-button-edit"
@@ -115,7 +115,7 @@
 <h4>Events</h4>
 <p>This element has no HTMLDB events.</p>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-refresh</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-refresh</code></h3>
 <p>An action button is used for refreshing all <code>htmldb-table</code> elements.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;button class="htmldb-button-refresh"
@@ -125,7 +125,7 @@
 <h4>Events</h4>
 <p>This element has no HTMLDB events.</p>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-save</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-save</code></h3>
 <p>An action button is used for saving current values of the specified form.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;button class="htmldb-button-save"
@@ -170,7 +170,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-sort</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-button-sort</code></h3>
 <p>An action button is used for updating the sorting preferences.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;button type="button"
@@ -232,7 +232,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-checkbox-group</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-checkbox-group</code></h3>
 <p>A container element for checkbox inputs. <code>htmldb-checkbox-group</code> makes it possible to select/update/delete multiple records.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;ul id="ulCheckboxGroup1" class="htmldb-checkbox-group" data-htmldb-table="myTable"&gt;
@@ -330,7 +330,7 @@
 <td>Gives the total checkbox count in the checkbox group.<br><br><code>Read-Only</code></td>
 </tr>
 </tbody>
-</table></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-error</code></h3>
+</table></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-error</code></h3>
 <p>A container element for the errors.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;div class="htmldb-error"
@@ -366,7 +366,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-field</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-field</code></h3>
 <p>An input element, that holds the current values of the <code>htmldb-form</code> fields.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;form id="myForm"
@@ -430,7 +430,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-form</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-form</code></h3>
 <p>A container for the <code>htmldb-field</code> elements, that automatically updated by <code>htmldb-table</code>.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;form id="myForm"
@@ -471,7 +471,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-input-save</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-input-save</code></h3>
 <p>A standalone input that automatically update the specific <code>htmldb-table</code> record.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;input id="name"
@@ -539,7 +539,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-message</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-message</code></h3>
 <p>A container element for the messages.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;div class="htmldb-message"
@@ -575,7 +575,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-pagination</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-pagination</code></h3>
 <p>A container element for easily navigating among the pages of <code>htmldb-table</code> element.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;ul class="htmldb-pagination"
@@ -704,7 +704,7 @@
 <td>Gives the current page count.<br><br><code>Read-Only</code></td>
 </tr>
 </tbody>
-</table></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-section</code></h3>
+</table></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-section</code></h3>
 <p>A container for the elements, that automatically rendered by the related <code>htmldb-table</code>.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;div class="htmldb-section" data-htmldb-table="myTable"&gt;
@@ -744,7 +744,7 @@
 <h4>Events</h4>
 <p>This element has no HTMLDB events.</p>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-select</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-select</code></h3>
 <p>A select element that automatically populated with the related <code>htmldb-table</code>.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;select id="mySelect"
@@ -813,7 +813,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-table-validation</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-table-validation</code></h3>
 <p>A container element for conditions validated locally before writing a record to <code>htmldb-table</code> element.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;ul class="htmldb-table-validation"
@@ -886,7 +886,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-table</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-table</code></h3>
 <p>Data source element that retrieves and stores data from the server. Also, it validates and posts data to the server.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;div id="myFirstTable"
@@ -1027,7 +1027,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>All the columns in the table, can be considered as HTMLDB variable.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-template</code></h3>
+<p>All the columns in the table, can be considered as HTMLDB variable.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-template</code></h3>
 <p>A container element for the templates, that are automatically rendered by related <code>htmldb-table</code>.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;table id="myTemplateTarget"&gt;&lt;/table&gt;
@@ -1110,7 +1110,7 @@
 </tbody>
 </table>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-toggle</code></h3>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p><div class="container scrollspy" id="divUnderstandTheSystem"><h3><code>htmldb-toggle</code></h3>
 <p>A special container for the form fields that automatically displayed or hided for a certain condition.</p>
 <h4>Syntax</h4>
 <pre><code class="language-html">&lt;div id="myContainer"
@@ -1160,7 +1160,7 @@
 <h4>Events</h4>
 <p>This element has no HTMLDB events.</p>
 <h4>Variables</h4>
-<p>This element has no HTMLDB variables.</p></div></section>
+<p>This element has no HTMLDB variables.</p></div><div class="divider"></div><p>&nbsp;</p></section>
         </div>
     </main>
 

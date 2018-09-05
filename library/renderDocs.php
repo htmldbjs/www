@@ -33,12 +33,17 @@ for ( $i = 0; $i < $listCount; $i++) {
 
         $newDocContent .= '<div class="container scrollspy" id="divUnderstandTheSystem">'
                             . $Parsedown->text($mdContent)
-                            . '</div>';
+                            . '</div>'
+                            . '<div class="divider"></div>'
+                            . '<p>&nbsp;</p>';
 
         fclose($mdFile);
     }
 
-    fwrite($newDocFile, $docStartContent . $newDocContent . $docEndContent);
+    fwrite($newDocFile, $docStartContent 
+                        . '<div class="container"><h1>' . ucwords($docName) . '</h1></div>'
+                        . $newDocContent 
+                        . $docEndContent);
     fclose($newDocFile);
     
 }

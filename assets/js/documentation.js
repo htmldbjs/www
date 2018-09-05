@@ -16,6 +16,8 @@ function initializePage() {
     $('#navbarFixed').css('transform', 'translateY(0px)');
     $('#navbarFixed').css('position', 'fixed');
 
+    fixDocumentationElements();
+
 }
 function isScrolledIntoView(element) {
     var elementTop = element.getBoundingClientRect().top;
@@ -43,4 +45,32 @@ function checkScroll() {
             }
         }
     } // for (let i = 0; i < $('.wrapper > section').length - 1; i++) {
+}
+function fixDocumentationElements() {
+
+    // Make table striped
+    var tables = document.getElementsByTagName('table');
+    Array.from(tables).forEach(function(table) {
+        table.classList.add('striped');
+    });
+
+    // Replace <h4> with <h5>
+    var headingElements = document.getElementsByTagName('h4');
+    
+    Array.from(headingElements).forEach(function(el) {
+        var newHeading = document.createElement('h5');
+        newHeading.innerHTML = el.innerHTML;
+
+        el.parentNode.replaceChild(newHeading, el);
+    });
+
+    // Replace <h3> with <h2>
+    var headingElements = document.getElementsByTagName('h3');
+    
+    Array.from(headingElements).forEach(function(el) {
+        var newHeading = document.createElement('h2');
+        newHeading.innerHTML = el.innerHTML;
+
+        el.parentNode.replaceChild(newHeading, el);
+    });
 }
